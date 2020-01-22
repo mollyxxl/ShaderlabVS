@@ -1,0 +1,282 @@
+﻿#
+# A defination for the functions in Unity3D
+#
+# Use the format:
+#	{%
+#		%$ Name = {} $%
+#		%$ Synopsis = {} $%
+#		%$ Description = {} $%
+#	%}
+#
+
+{%
+	%$ Name = { UnpackNormal } $%
+	%$ Synopsis = {
+		UnpackNormal (tex2D t2d);
+	} $%
+	%$ Description = { Unpack normal from texture. } $%
+%}
+
+{%
+	%$ Name = { Luminance } $%
+	%$ Synopsis = {
+		Luminance (half3 c);
+	} $%
+	%$ Description = {  Converts color to luminance (grayscale) } $%
+%}
+
+{%
+	%$ Name = { GammaToLinearSpaceExact } $%
+	%$ Synopsis = {
+		GammaToLinearSpaceExact (float value);
+	} $%
+	%$ Description = { GammaToLinearSpaceExact } $%
+%}
+
+{%
+	%$ Name = { GammaToLinearSpace } $%
+	%$ Synopsis = {
+		GammaToLinearSpace (half3 sRGB);
+	} $%
+	%$ Description = { GammaToLinearSpace } $%
+%}
+
+{%
+	%$ Name = { LinearToGammaSpaceExact } $%
+	%$ Synopsis = {
+		LinearToGammaSpaceExact (float value);
+	} $%
+	%$ Description = { LinearToGammaSpaceExact } $%
+%}
+
+{%
+	%$ Name = { LinearToGammaSpace } $%
+	%$ Synopsis = {
+		LinearToGammaSpace (half3 linRGB);
+	} $%
+	%$ Description = { LinearToGammaSpace } $%
+%}
+
+{%
+	%$ Name = { UnityWorldToClipPos } $%
+	%$ Synopsis = {
+		UnityWorldToClipPos (float3 pos);
+	} $%
+	%$ Description = { Tranforms position from world to homogenous space } $%
+%}
+
+{%
+	%$ Name = { UnityViewToClipPos } $%
+	%$ Synopsis = {
+		UnityViewToClipPos (float3 pos);
+	} $%
+	%$ Description = { Tranforms position from view to homogenous space } $%
+%}
+
+{%
+	%$ Name = { UnityObjectToViewPos } $%
+	%$ Synopsis = {
+		UnityObjectToViewPos (float3 pos);
+	} $%
+	%$ Description = { Tranforms position from object to camera space } $%
+%}
+
+{%
+	%$ Name = { UnityObjectToViewPos } $%
+	%$ Synopsis = {
+		UnityObjectToViewPos (float3 pos);
+	} $%
+	%$ Description = { Tranforms position from object to camera space } $%
+%}
+
+{%
+	%$ Name = { UnityWorldToViewPos } $%
+	%$ Synopsis = {
+		UnityWorldToViewPos (float3 pos);
+	} $%
+	%$ Description = { Tranforms position from world to camera space } $%
+%}
+
+{%
+	%$ Name = { UnityObjectToWorldDir } $%
+	%$ Synopsis = {
+		UnityObjectToWorldDir (float3 dir);
+	} $%
+	%$ Description = { Transforms direction from object to world space } $%
+%}
+
+{%
+	%$ Name = { UnityWorldToObjectDir } $%
+	%$ Synopsis = {
+		UnityWorldToObjectDir (float3 dir);
+	} $%
+	%$ Description = { Transforms direction from world to object space } $%
+%}
+
+{%
+	%$ Name = { UnityObjectToWorldNormal } $%
+	%$ Synopsis = {
+		UnityObjectToWorldNormal (float3 normal);
+	} $%
+	%$ Description = { Transforms normal from object to world space} $%
+%}
+
+{%
+	%$ Name = { UnityWorldSpaceLightDir } $%
+	%$ Synopsis = {
+		UnityWorldSpaceLightDir (float3 v);
+	} $%
+	%$ Description = { Computes world space light direction } $%
+%}
+
+{%
+	%$ Name = { ObjSpaceLightDir } $%
+	%$ Synopsis = {
+		ObjSpaceLightDir (float4 v);
+	} $%
+	%$ Description = { Computes object space light direction } $%
+%}
+
+{%
+	%$ Name = { UnityWorldSpaceViewDir } $%
+	%$ Synopsis = {
+		UnityWorldSpaceViewDir (float4 v);
+	} $%
+	%$ Description = {  Computes world space view direction, from object space position} $%
+%}
+
+{%
+	%$ Name = { ObjSpaceViewDir } $%
+	%$ Synopsis = {
+		ObjSpaceViewDir (float4 v);
+	} $%
+	%$ Description = { Computes object space view direction } $%
+%}
+
+{%
+	%$ Name = { Linear01Depth } $%
+	%$ Synopsis = {
+		Linear01Depth (float z);
+	} $%
+	%$ Description = { Z buffer to linear 0..1 depth } $%
+%}
+
+{%
+	%$ Name = { LinearEyeDepth } $%
+	%$ Synopsis = {
+		LinearEyeDepth (float z);
+	} $%
+	%$ Description = { Z buffer to linear depth } $%
+%}
+
+{%
+	%$ Name = { SAMPLE_DEPTH_TEXTURE } $%
+	%$ Synopsis = {
+		SAMPLE_DEPTH_TEXTURE (sample2D cameraDepthTexture,float2 uv);
+	} $%
+	%$ Description = { calc camera depth,return depath } $%
+%}
+
+{%
+	%$ Name = { SAMPLE_DEPTH_TEXTURE_PROJ } $%
+	%$ Synopsis = {
+		SAMPLE_DEPTH_TEXTURE_PROJ (sample2D cameraDepthTexture,float4 uv);
+	} $%
+	%$ Description = { calc camera depth,return depath } $%
+%}
+
+{%
+	%$ Name = { ComputeNonStereoScreenPos } $%
+	%$ Synopsis = {
+		ComputeNonStereoScreenPos (float4 pos);
+	} $%
+	%$ Description = { ComputeNonStereoScreenPos  return float4 } $%
+%}
+
+{%
+	%$ Name = { ComputeScreenPos } $%
+	%$ Synopsis = {
+		ComputeScreenPos (float4 pos);
+	} $%
+	%$ Description = { ComputeScreenPos  return float4 } $%
+%}
+
+{%
+	%$ Name = { ComputeGrabScreenPos } $%
+	%$ Synopsis = {
+		ComputeGrabScreenPos (float4 pos);
+	} $%
+	%$ Description = { ComputeGrabScreenPos  return float4 } $%
+%}
+
+{%
+	%$ Name = { UnityObjectToClipPos } $%
+	%$ Synopsis = {
+		UnityObjectToClipPos (float4 pos);
+	} $%
+	%$ Description = { Tranforms position from object to homogenous space, return float4 } $%
+%}
+
+{%
+	%$ Name = { UNITY_SAMPLE_TEXCUBE } $%
+	%$ Synopsis = {
+		UNITY_SAMPLE_TEXCUBE (samplerCUBE tex,float3 coord);
+	} $%
+	%$ Description = { UNITY_SAMPLE_TEXCUBE } $%
+%}
+
+{%
+	%$ Name = { BoxProjectedCubemapDirection } $%
+	%$ Synopsis = {
+		BoxProjectedCubemapDirection (float3 worldRefl, float3 worldPos, float4 cubemapCenter, float4 boxMin, float4 boxMax);
+	} $%
+	%$ Description = { 通过BoxProjectedCubemapDirection函数修正reflectDir } $%
+%}
+
+{%
+	%$ Name = { DecodeHDR } $%
+	%$ Synopsis = {
+		DecodeHDR (half4 data, half4 decodeInstructions);
+	} $%
+	%$ Description = { Decodes HDR textures } $%
+%}
+
+{%
+	%$ Name = { COMPUTE_EYEDEPTH } $%
+	%$ Synopsis = {
+		COMPUTE_EYEDEPTH (float depth);
+	} $%
+	%$ Description = { 计算顶点摄像机空间的深度：距离裁剪平面的距离，线性变化,return depth } $%
+%}
+
+{%
+	%$ Name = { Shade4PointLights } $%
+	%$ Synopsis = {
+		Shade4PointLights (float4 lightPosX, float4 lightPosY, float4 lightPosZ,float3 lightColor0, float3 lightColor1, float3 lightColor2, float3 lightColor3,float4 lightAttenSq,float3 pos, float3 normal);
+	} $%
+	%$ Description = { 计算顶点光照} $%
+%}
+
+{%
+	%$ Name = { ShadeSHPerVertex } $%
+	%$ Synopsis = {
+		ShadeSHPerVertex (half3 normal, half3 ambient);
+	} $%
+	%$ Description = { 计算球谐光照} $%
+%}
+
+{%
+	%$ Name = { UNITY_TRANSFER_SHADOW } $%
+	%$ Synopsis = {
+		UNITY_TRANSFER_SHADOW(outStrut,uv)
+	} $%
+	%$ Description = { 计算Shadow} $%
+%}
+
+{%
+	%$ Name = { UNITY_LIGHT_ATTENUATION } $%
+	%$ Synopsis = {
+		UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos)
+	} $%
+	%$ Description = { 计算Shadow} $%
+%}

@@ -1,0 +1,17 @@
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\HLSL_CG_datatype.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\HLSL_CG_functions.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\HLSL_CG_Keywords.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\Unity3D_datatype.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\Unity3D_functions.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\Unity3D_keywords.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\Unity3D_macros.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\Data\Unity3D_values.def
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\ShaderlabVS.LexTools.exe.config
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\ShaderlabVS.LexTools.exe
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\ShaderlabVS.LexTools.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\ShaderlabVS.Data.dll
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\bin\Debug\ShaderlabVS.Data.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.csprojAssemblyReference.cache
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.csproj.CopyComplete
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.exe
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.pdb

@@ -1,0 +1,360 @@
+﻿#
+# A defination for the built-in values in Unity3D
+#
+# Use the format:
+#	{%
+#		%$ Name = {} $%
+#		%$ Type = {} $%
+#		%$ Value = {} $%
+#	%}
+#
+
+#Most of marcos are from here https://docs.unity3d.com/2018.4/Documentation/Manual/SL-UnityShaderVariables.html
+
+#-------------------------------------------------------------------------------------------------
+#----------------------------------------Transformations ----------------------------------------
+#-------------------------------------------------------------------------------------------------
+
+{%
+	%$ Name = {UNITY_MATRIX_MVP} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current model * view * projection matrix.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_MV} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current model * view matrix.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_V} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current view matrix.} $%
+%}
+
+
+{%
+	%$ Name = {UNITY_MATRIX_P} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current projection matrix.} $%
+%}
+
+
+{%
+	%$ Name = {UNITY_MATRIX_VP} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current view * projection matrix.} $%
+%}
+
+
+{%
+	%$ Name = {UNITY_MATRIX_T_MV} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Transpose of model * view matrix.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_IT_MV} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Inverse transpose of model * view matrix.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_TEXTURE0} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Texture transformation matrices.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_TEXTURE1} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Texture transformation matrices.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_TEXTURE2} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Texture transformation matrices.} $%
+%}
+
+{%
+	%$ Name = {UNITY_MATRIX_TEXTURE3} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Texture transformation matrices.} $%
+%}
+
+{%
+	%$ Name = {unity_ObjectToWorld} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Current model matrix.} $%
+%}
+
+
+{%
+	%$ Name = {unity_WorldToObject} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Inverse of current world matrix.} $%
+%}
+
+{%
+	%$ Name = {_WorldSpaceCameraPos} $%
+	%$ Type = {float3} $%
+	%$ Value = {World space position of the camera.} $%
+%}
+
+{%
+	%$ Name = {_ProjectionParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {x is 1.0 (or –1.0 if currently rendering with a flipped projection matrix), y is the camera’s near plane, z is the camera’s far plane and w is 1/FarPlane.} $%
+%}
+
+{%
+	%$ Name = {_ScreenParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {x is the width of the camera’s target texture in pixels,y is the height of the camera’s target texture in pixels, z is 1.0 + 1.0/width and w is 1.0 + 1.0/height.} $%
+%}
+
+{%
+	%$ Name = {_ZBufferParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {Used to linearize Z buffer values. x is (1-far/near), y is (far/near), z is (x/far) and w is (y/far).} $%
+%}
+
+{%
+	%$ Name = {unity_OrthoParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {x is orthographic camera’s width, y is orthographic camera’s height, z is unused and w is 1.0 when camera is orthographic, 0.0 when perspective.} $%
+%}
+
+{%
+	%$ Name = {unity_CameraProjection} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Camera’s projection matrix.} $%
+%}
+
+{%
+	%$ Name = {unity_CameraInvProjection} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {Inverse of camera’s projection matrix.} $%
+%}
+
+{%
+	%$ Name = {unity_CameraWorldClipPlanes} $%
+	%$ Type = {float4} $%
+	%$ Value = {Camera frustum plane world space equations, in this order: left, right, bottom, top, near, far.} $%
+%}
+
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------Lighting --------------------------------------------
+#-------------------------------------------------------------------------------------------------
+
+{%
+	%$ Name = {_WorldSpaceLightPos0} $%
+	%$ Type = {float4} $%
+	%$ Value = {Directional lights: (world space direction, 0). Other lights: (world space position, 1).} $%	
+%}
+
+{%
+	%$ Name = {_LightColor0} $%
+	%$ Type = {float4} $%
+	%$ Value = {Light color} $%	
+%}
+
+{%
+	%$ Name = {_LightMatrix0} $%
+	%$ Type = {float4x4} $%
+	%$ Value = {World space to light space transform matrix. Defined in AutoLight.cginc} $%	
+%}
+
+
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------Various --------------------------------------------
+#------------------------------------------------------------------------------------------------
+
+{%
+	%$ Name = {_Time} $%
+	%$ Type = {float4} $%
+	%$ Value = {Time (t/20, t, t*2, t*3), use to animate things inside the shaders.} $%
+%}
+
+{%
+	%$ Name = {_SinTime} $%
+	%$ Type = {float4} $%
+	%$ Value = {Sine of time: (t/8, t/4, t/2, t).} $%
+%}
+
+{%
+	%$ Name = {_CosTime} $%
+	%$ Type = {float4} $%
+	%$ Value = {Cosine of time: (t/8, t/4, t/2, t).} $%
+%}
+
+{%
+	%$ Name = {unity_DeltaTime} $%
+	%$ Type = {float4} $%
+	%$ Value = {Delta time: (dt, 1/dt, smoothDt, 1/smoothDt).} $%
+%}
+
+{%
+	%$ Name = {unity_LODFade} $%
+	%$ Type = {float4} $%
+	%$ Value = {Delta time: (dt, 1/dt, smoothDt, 1/smoothDt).} $%
+%}
+
+{%
+	%$ Name = {_TextureSampleAdd} $%
+	%$ Type = {float4} $%
+	%$ Value = {Delta time: (dt, 1/dt, smoothDt, 1/smoothDt).} $%
+%}
+
+#-------------------------------------------------------------------------------------------------
+#-----------------------------------------Fog And Ambient ----------------------------------------
+#-------------------------------------------------------------------------------------------------
+
+{%
+	%$ Name = {unity_AmbientSky} $%
+	%$ Type = {float4} $%
+	%$ Value = {Sky ambient lighting color in gradient ambient lighting case.} $%	
+%}
+
+{%
+	%$ Name = {unity_AmbientEquator} $%
+	%$ Type = {float4} $%
+	%$ Value = {Equator ambient lighting color in gradient ambient lighting case.} $%	
+%}
+
+{%
+	%$ Name = {unity_AmbientGround} $%
+	%$ Type = {float4} $%
+	%$ Value = {Ground ambient lighting color in gradient ambient lighting case.} $%	
+%}
+
+{%
+	%$ Name = {UNITY_LIGHTMODEL_AMBIENT} $%
+	%$ Type = {float4} $%
+	%$ Value = {Ambient lighting color (sky color in gradient ambient case). Legacy variable.} $%	
+%}
+
+{%
+	%$ Name = {unity_FogColor} $%
+	%$ Type = {float4} $%
+	%$ Value = {Fog color.} $%	
+%}
+
+{%
+	%$ Name = {unity_FogParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {Parameters for fog calculation: (density / sqrt(ln(2)), density / ln(2), –1/(end-start), end/(end-start)). x is useful for Exp2 fog mode, y for Exp mode, z and w for Linear mode.} $%	
+%}
+
+{%
+	%$ Name = {UNITY_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {3.14159265359f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_TWO_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {6.28318530718f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_FOUR_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {12.56637061436f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_INV_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {0.31830988618f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_INV_TWO_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {0.15915494309f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_INV_FOUR_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {0.07957747155f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_HALF_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {1.57079632679f} $%	
+%}
+
+{%
+	%$ Name = {UNITY_INV_HALF_PI} $%
+	%$ Type = {float} $%
+	%$ Value = {0.636619772367f} $%	
+%}
+
+#-------------------------------------------------------------------------------------------------
+#-----------------------------------------Reflection Probes ----------------------------------------
+#-------------------------------------------------------------------------------------------------
+{%
+	%$ Name = {unity_SpecCube0} $%
+	%$ Type = {samplerCUBE} $%
+	%$ Value = {Reflection Probe} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube1} $%
+	%$ Type = {samplerCUBE} $%
+	%$ Value = {Reflection Probe} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube0_BoxMax} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube0_BoxMin} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube0_ProbePosition} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube0_HDR} $%
+	%$ Type = {half4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube1_BoxMax} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube1_BoxMin} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube1_ProbePosition} $%
+	%$ Type = {float4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}
+
+{%
+	%$ Name = {unity_SpecCube1_HDR} $%
+	%$ Type = {half4} $%
+	%$ Value = {UnityReflectionProbes} $%	
+%}

@@ -1,0 +1,6 @@
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.exe.config
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.exe
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.exe
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.csprojAssemblyReference.cache

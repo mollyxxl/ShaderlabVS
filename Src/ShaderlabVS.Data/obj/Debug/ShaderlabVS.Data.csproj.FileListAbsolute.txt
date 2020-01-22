@@ -1,0 +1,5 @@
+D:\ShaderlabVS-master\Src\ShaderlabVS.Data\bin\Debug\ShaderlabVS.Data.dll
+D:\ShaderlabVS-master\Src\ShaderlabVS.Data\bin\Debug\ShaderlabVS.Data.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.Data\obj\Debug\ShaderlabVS.Data.dll
+D:\ShaderlabVS-master\Src\ShaderlabVS.Data\obj\Debug\ShaderlabVS.Data.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.Data\obj\Debug\ShaderlabVS.Data.csprojAssemblyReference.cache
