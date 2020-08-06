@@ -480,3 +480,27 @@
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
+
+{%
+	%$ Name = {CBUFFER_START} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {CBUFFER_END} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {HLSLPROGRAM} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {ENDHLSL} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
