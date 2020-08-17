@@ -414,3 +414,87 @@
 	%$ Synopsis = {} $%
 	%$ Description = { Unity 内置宏定义 } $%
 %}
+
+{%
+	%$ Name = { UNITY_REVERSED_Z } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_NEAR_CLIP_VALUE } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_BRANCH } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_LIGHTMAP_FULL_HDR } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { LIGHTMAP_HDR_MULTIPLIER } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { LIGHTMAP_HDR_EXPONENT } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAr } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAg } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAb } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBr } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBg } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBb } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHC } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { SHADOWS_SHADOWMASK } $%
+	%$ Synopsis = {} $%
+	%$ Description = { shadowmask相关 } $%
+%}

@@ -504,3 +504,9 @@
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
+
+{%
+	%$ Name = {HLSLINCLUDE} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
