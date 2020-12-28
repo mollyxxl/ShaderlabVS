@@ -44,3 +44,4 @@ D:\ShaderlabVS-master\Src\ShaderlabVS\obj\Debug\createTemplateManifests.cache
 D:\ShaderlabVS-master\Src\ShaderlabVS\obj\Debug\_EmptyResource.resources
 D:\ShaderlabVS-master\Src\ShaderlabVS\obj\Debug\ShaderlabVS-2017.csproj.GenerateResource.cache
 D:\ShaderlabVS-master\Src\ShaderlabVS\obj\Debug\ShaderlabVS-2017.csprojAssemblyReference.cache
+D:\ShaderlabVS-master\Src\ShaderlabVS\obj\Debug\ShaderlabVS-2017.csproj.CoreCompileInputs.cache

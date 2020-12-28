@@ -280,3 +280,27 @@
 	} $%
 	%$ Description = { 计算Shadow} $%
 %}
+
+{%
+	%$ Name = { DecodeHDREnvironment } $%
+	%$ Synopsis = {
+		DecodeHDREnvironment(sample, unity_SpecCube0_HDR)
+	} $%
+	%$ Description = { decode cube map} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURECUBE_LOD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURECUBE_LOD(unity_SpecCube0,samplerunity_SpecCube0,uvw,mip)
+	} $%
+	%$ Description = { 纹理采样} $%
+%}
+
+{%
+	%$ Name = { BoxProjection } $%
+	%$ Synopsis = {
+		BoxProjection(reflectVector,s.position,unity_SpecCube0_ProbePosition,unity_SpecCube0_BoxMin,unity_SpecCube0_BoxMax);
+	} $%
+	%$ Description = { Box采样} $%
+%}

@@ -498,3 +498,9 @@
 	%$ Synopsis = {} $%
 	%$ Description = { shadowmask相关 } $%
 %}
+
+{%
+	%$ Name = { enable_d3d11_debug_symbols } $%
+	%$ Synopsis = {} $%
+	%$ Description = { shader调试 } $%
+%}

@@ -15,3 +15,4 @@ D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.cs
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.csproj.CopyComplete
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.exe
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.pdb
+D:\ShaderlabVS-master\Src\ShaderlabVS.LexTools\obj\Debug\ShaderlabVS.LexTools.csproj.CoreCompileInputs.cache
