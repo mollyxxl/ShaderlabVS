@@ -5,3 +5,10 @@ D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.exe
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.pdb
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.csprojAssemblyReference.cache
 D:\ShaderlabVS-master\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.csproj.CoreCompileInputs.cache
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.exe.config
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.exe
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\bin\Debug\ShaderlabVS.LexData.pdb
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.csproj.AssemblyReference.cache
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.csproj.CoreCompileInputs.cache
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.exe
+D:\workspace\ShaderlabVS\Src\ShaderlabVS.LexData\obj\Debug\ShaderlabVS.LexData.pdb

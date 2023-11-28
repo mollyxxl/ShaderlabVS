@@ -352,6 +352,24 @@
 	%$ Format = {} $%
 %}
 
+{%
+	%$ Name = {UniversalForward} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {DepthOnly} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {Meta} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
 #|||||||||||||||||||||||||||||
 
 {%
@@ -477,6 +495,36 @@
 
 {%
 	%$ Name = {tessphong} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {CBUFFER_START} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {CBUFFER_END} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {HLSLPROGRAM} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {ENDHLSL} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {HLSLINCLUDE} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}

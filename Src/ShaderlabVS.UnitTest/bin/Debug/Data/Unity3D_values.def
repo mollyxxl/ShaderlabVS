@@ -167,6 +167,17 @@
 	%$ Value = {World space to light space transform matrix. Defined in AutoLight.cginc} $%	
 %}
 
+{%
+	%$ Name = {_MainLightColor} $%
+	%$ Type = {float4} $%
+	%$ Value = {Unity URP Main Light color} $%	
+%}
+
+{%
+	%$ Name = {_MainLightPosition} $%
+	%$ Type = {float4} $%
+	%$ Value = {unity urp Directional lights: (world space direction, 0). Other lights: (world space position, 1).} $%	
+%}
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------Various --------------------------------------------

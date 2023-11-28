@@ -2,40 +2,40 @@
 =============================================================================
 NFSA Summary for input file <Shaderlab.lex>
 =============================================================================
-Total NFSA states = 10808
+Total NFSA states = 11518
 Number of Start Conditions = 2
 Start condition INITIAL:
-  number of patterns = 15, number of nfsa states = 12571, accept states = 15
+  number of patterns = 15, number of nfsa states = 13357, accept states = 15
 Start condition COMMENT:
   number of patterns = 0, number of nfsa states = 1, accept states = 0
 =============================================================================
 GPLEX: NFSA built.   28 msec
 =============================================================================
-GPLEX: DFSA built. 1630 msec
+GPLEX: DFSA built. 1304 msec
 =============================================================================
-GPLEX: DFSA minimized.   47 msec
+GPLEX: DFSA minimized.   36 msec
 =============================================================================
-GPLEX: Shortest strings found.    4 msec
+GPLEX: Shortest strings found.    3 msec
 =============================================================================
 DFSA Summary
 =============================================================================
 Number of dfsa instances = 2
 Start condition INITIAL:
-  number of dfsa states = 4963, number of accept states = 296
+  number of dfsa states = 5228, number of accept states = 316
 Start condition COMMENT:
   number of dfsa states = 1, number of accept states = 0
 =============================================================================
-GPLEX: C# file emitted.   68 msec
+GPLEX: C# file emitted.   38 msec
 =============================================================================
 GPLEX Summary
 =============================================================================
-Total number of states = 2647, total accept states = 18, backup states = 2
-Original state number was 4965, minimized machine has 2647 states
-Compression summary: used 8,656 nextstate entries, plus 126 map entries
-- Uncompressed automaton would have -1,345,912,832 nextstate entries
+Total number of states = 2816, total accept states = 18, backup states = 2
+Original state number was 5230, minimized machine has 2816 states
+Compression summary: used 9,165 nextstate entries, plus 126 map entries
+- Uncompressed automaton would have -1,157,627,904 nextstate entries
 - Input characters are packed into 64 equivalence classes
 - CharClass compression 99.99%, 64 entries Vs 1,114,112
-- Nextstate table compression 94.89%, 8,656 entries Vs 169,408
+- Nextstate table compression 94.91%, 9,165 entries Vs 180,224
 - CharacterMap compression is 99.99%, 126 entries Vs 1,114,112
 - Decision tree depth is 1
 

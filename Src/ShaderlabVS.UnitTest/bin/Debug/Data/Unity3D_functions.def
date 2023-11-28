@@ -170,6 +170,22 @@
 %}
 
 {%
+	%$ Name = { LinearEyeDepth } $%
+	%$ Synopsis = {
+		LinearEyeDepth(sceneZ, _ZBufferParams);
+	} $%
+	%$ Description = { unity urp Z buffer to linear depth } $%
+%}
+
+{%
+	%$ Name = { Linear01Depth } $%
+	%$ Synopsis = {
+		Linear01Depth(sceneZ, _ZBufferParams);
+	} $%
+	%$ Description = { unity urp Z buffer to linear 0..1 depth } $%
+%}
+
+{%
 	%$ Name = { SAMPLE_DEPTH_TEXTURE } $%
 	%$ Synopsis = {
 		SAMPLE_DEPTH_TEXTURE (sample2D cameraDepthTexture,float2 uv);
@@ -196,7 +212,7 @@
 {%
 	%$ Name = { ComputeScreenPos } $%
 	%$ Synopsis = {
-		ComputeScreenPos (float4 pos);
+		ComputeScreenPos (float4 clipPos);
 	} $%
 	%$ Description = { ComputeScreenPos  return float4 } $%
 %}
@@ -279,4 +295,180 @@
 		UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos)
 	} $%
 	%$ Description = { 计算Shadow} $%
+%}
+
+{%
+	%$ Name = { DecodeHDREnvironment } $%
+	%$ Synopsis = {
+		DecodeHDREnvironment(sample, unity_SpecCube0_HDR)
+	} $%
+	%$ Description = { decode cube map} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURECUBE_LOD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURECUBE_LOD(unity_SpecCube0,samplerunity_SpecCube0,uvw,mip)
+	} $%
+	%$ Description = { 纹理采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE2D } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, coord2)
+	} $%
+	%$ Description = { Unity URP 纹理采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE2D_LOD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE2D_LOD(textureName, samplerName, coord2, lod)  
+	} $%
+	%$ Description = { Unity URP 纹理LOD采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE2D_BIAS } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE2D_BIAS(textureName, samplerName, coord2, bias)
+	} $%
+	%$ Description = { Unity URP 纹理bias采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE2D_GRAD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE2D_GRAD(textureName, samplerName, coord2, dpdx, dpdy)
+	} $%
+	%$ Description = { Unity URP 纹理dx dy采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE2D_ARRAY } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE2D_ARRAY(textureName, samplerName, coord2, index)
+	} $%
+	%$ Description = { Unity URP 纹理Array采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURECUBE } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURECUBE(textureName, samplerName, coord3)
+	} $%
+	%$ Description = { Unity URP Cube纹理采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURECUBE_LOD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURECUBE_LOD(textureName, samplerName, coord3, lod)
+	} $%
+	%$ Description = { Unity URP Cube纹理lod采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE3D } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE3D(textureName, samplerName, coord3)
+	} $%
+	%$ Description = { Unity URP 3D纹理采样} $%
+%}
+
+{%
+	%$ Name = { SAMPLE_TEXTURE3D_LOD } $%
+	%$ Synopsis = {
+		SAMPLE_TEXTURE3D_LOD(textureName, samplerName, coord3, lod) 
+	} $%
+	%$ Description = { Unity URP 3D纹理lod采样} $%
+%}
+
+{%
+	%$ Name = { BoxProjection } $%
+	%$ Synopsis = {
+		BoxProjection(reflectVector,s.position,unity_SpecCube0_ProbePosition,unity_SpecCube0_BoxMin,unity_SpecCube0_BoxMax);
+	} $%
+	%$ Description = { Box采样} $%
+%}
+
+{%
+	%$ Name = { TransformObjectToWorld } $%
+	%$ Synopsis = {
+		 TransformObjectToWorld(positionOS);
+	} $%
+	%$ Description = { Unity URP Object Spcace to World Space,positionOS is Object Space Position} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToView } $%
+	%$ Synopsis = {
+		 TransformWorldToView(positionWS);
+	} $%
+	%$ Description = { Unity URP World Spcace to View Space,positionWS is World Space Position} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToHClip } $%
+	%$ Synopsis = {
+		 TransformWorldToHClip(positionWS);
+	} $%
+	%$ Description = { Unity URP World Spcace to HClip Space,positionWS is World Space Position} $%
+%}
+
+{%
+	%$ Name = { TransformObjectToHClip } $%
+	%$ Synopsis = {
+		 TransformObjectToHClip(positionOS);
+	} $%
+	%$ Description = { Unity URP Object Spcace to HClip Space,positionOS is Object Space Position} $%
+%}
+
+{%
+	%$ Name = { TransformObjectToWorldNormal } $%
+	%$ Synopsis = {
+		 TransformObjectToWorldNormal(normalOS);
+	} $%
+	%$ Description = { Unity URP Nomrmal from Object Spcace to World Space,normalOS is Object Space Normal} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToObjectNormal } $%
+	%$ Synopsis = {
+		 TransformWorldToObjectNormal(normalWS);
+	} $%
+	%$ Description = { Unity URP Nomrmal from World Spcace to Object Space,normalOS is Object Space Normal} $%
+%}
+
+{%
+	%$ Name = { TransformObjectToWorldDir } $%
+	%$ Synopsis = {
+		 TransformObjectToWorldDir(dirOS);
+	} $%
+	%$ Description = { Unity URP direction from Object Spcace to World Space} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToObjectDir } $%
+	%$ Synopsis = {
+		 TransformWorldToObjectDir(dirWS);
+	} $%
+	%$ Description = { Unity URP direction from World Spcace to Object Space} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToViewDir } $%
+	%$ Synopsis = {
+		 TransformWorldToViewDir(dirWS);
+	} $%
+	%$ Description = { Unity URP direction from World Spcace to View Space} $%
+%}
+
+{%
+	%$ Name = { TransformWorldToHClipDir } $%
+	%$ Synopsis = {
+		 TransformWorldToHClipDir(dirWS);
+	} $%
+	%$ Description = { Unity URP direction from World Spcace to HClip Space} $%
 %}

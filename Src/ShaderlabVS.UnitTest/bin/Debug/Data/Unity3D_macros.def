@@ -257,6 +257,19 @@
 %}
 
 
+{%
+	%$ Name = {TEXTURE2D_SHADOW_PARAM} $%
+	%$ Synopsis = {TEXTURE2D_SHADOW_PARAM(textureName, samplerName)} $%
+	%$ Description = {unity urp declares a shadowmap texture variable with name “tex”.} $%
+%}
+
+
+
+{%
+	%$ Name = {SAMPLE_TEXTURE2D_SHADOW} $%
+	%$ Synopsis = {SAMPLE_TEXTURE2D_SHADOW(textureName, samplerName, coord3) } $%
+	%$ Description = { unity urp samples shadowmap texture “tex” at given “uv” coordinate (XY components are texture location, Z component is depth to compare with). Returns single float value with the shadow term in 0..1 range.} $%
+%}
 
 #-----------------------------Constant buffer macros -------------------#
 #----------------------------------------------------------------------#
@@ -413,4 +426,142 @@
 	%$ Name = { VERTEXLIGHT_ON } $%
 	%$ Synopsis = {} $%
 	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_REVERSED_Z } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_NEAR_CLIP_VALUE } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_BRANCH } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { UNITY_LIGHTMAP_FULL_HDR } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { LIGHTMAP_HDR_MULTIPLIER } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { LIGHTMAP_HDR_EXPONENT } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity 内置宏定义 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAr } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAg } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHAb } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBr } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBg } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHBb } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { unity_SHC } $%
+	%$ Synopsis = {} $%
+	%$ Description = { 球谐函数相关变量 } $%
+%}
+
+{%
+	%$ Name = { SHADOWS_SHADOWMASK } $%
+	%$ Synopsis = {} $%
+	%$ Description = { shadowmask相关 } $%
+%}
+
+{%
+	%$ Name = { enable_d3d11_debug_symbols } $%
+	%$ Synopsis = {} $%
+	%$ Description = { shader调试 } $%
+%}
+
+{%
+	%$ Name = { TEXTURE2D } $%
+	%$ Synopsis = {TEXTURE2D(_MainTex)} $%
+	%$ Description = { Unity URP 声明纹理 } $%
+%}
+
+{%
+	%$ Name = { SAMPLER } $%
+	%$ Synopsis = {SAMPLER(sampler_MainTex)} $%
+	%$ Description = { Unity URP 声明纹理采样器 } $%
+%}
+
+{%
+	%$ Name = { _MAIN_LIGHT_SHADOWS } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity URP 主光Shadow Keyword } $%
+%}
+
+{%
+	%$ Name = { _MAIN_LIGHT_SHADOWS_CASCADE } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity URP 主光 cascade Shadow  Keyword } $%
+%}
+
+{%
+	%$ Name = { _ADDITIONAL_LIGHTS } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity URP 点光Keyword } $%
+%}
+
+{%
+	%$ Name = { _ADDITIONAL_LIGHT_SHADOWS } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity URP 点光 Shadow Keyword } $%
+%}
+
+{%
+	%$ Name = { _SHADOWS_SOFT } $%
+	%$ Synopsis = {} $%
+	%$ Description = { Unity Soft Shadow Keyword } $%
+%}
+
+{%
+	%$ Name = {ZERO_INITIALIZE} $%
+	%$ Synopsis = {ZERO_INITIALIZE(type, name)} $%
+	%$ Description = { unity urp initialize variable name of given type to zero.} $%
 %}

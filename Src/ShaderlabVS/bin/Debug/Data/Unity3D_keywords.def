@@ -352,6 +352,24 @@
 	%$ Format = {} $%
 %}
 
+{%
+	%$ Name = {UniversalForward} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {DepthOnly} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {Meta} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
 #|||||||||||||||||||||||||||||
 
 {%
